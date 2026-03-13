@@ -1,1 +1,0 @@
-https://cyhzdpgmrrmqxzkcmboy.supabase.co/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5aHpkcGdtcnJtcXh6a2NtYm95Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMyMzE4MTQsImV4cCI6MjA4ODgwNzgxNH0._uoRStdp9t1BdHS-licTLYEglYfsO-9iJzhT1-w0pWc
