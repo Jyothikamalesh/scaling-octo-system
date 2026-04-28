@@ -1,0 +1,5 @@
+Problem statement
+Re-architect the bank’s IBM MQ estate, currently marked by inconsistent queue/QM naming and uneven app distribution (idle QMs alongside QMs hosting 55+ apps), into a standardized 1 App : 1 QM topology with a coherent, policy-enforceable naming convention.
+Benefits
+	•	For the apps: clear ownership boundaries, isolated fault domains (no noisy-neighbor or shared-outage risk), and simpler migration and DR since each app’s MQ footprint is self-contained.
+	•	For the bank: stronger compliance tracking against US standards such as SOX (auditable change and access trails) and FFIEC/GLBA (data segregation and operational resilience), end-to-end per-app observability, and predictable capacity planning across the estate.​​​​​​​​​​​​​​​​
