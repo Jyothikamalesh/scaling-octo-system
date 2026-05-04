@@ -1,14 +1,1 @@
-Hi [Client],
-Thank you for raising this. Let me clarify the architecture, as I believe there may be a misunderstanding about how connectivity works in this setup.
-The VPN in this design is not user-facing. Users do not connect to it, configure it, or even know it exists. It operates at the machine level as a background service that starts automatically when the desktop powers on — before anyone logs in. Think of it as a virtual network cable between the desktop and the cloud, not as a traditional VPN that a user launches.
-The user experience is simply:
-  Desktop is on → Login screen appears → User types username and password → Desktop loads
-No VPN prompt. No VPN client. No additional step. Identical to logging into any office computer on a local network.
-To answer the question about impact if connectivity is not present — since this runs as an always-on system service, the only scenario where a device would be without connectivity is if the internet itself is down at that location. In that case:
-  • Previously logged-in users can still log in using cached credentials
-  • New users who have never logged into that specific device cannot authenticate until internet is restored
-  • Policy updates will resume automatically once connectivity returns
-This is the same behaviour as any office network where the connection to the domain controller is temporarily unavailable.
-Regarding the concern around WireGuard’s suitability for enterprise — understood. For the Windows endpoints to authenticate and receive policies from the cloud-hosted AD DC, there must be a persistent network path between the devices and the domain controller. This is a fundamental requirement regardless of the underlying technology.
-If the current approach is not acceptable, could your team propose an alternative connectivity method along with a system design that meets this requirement? That would help us evaluate and align on the right path forward.
-Best regards
+GET /api/data/v9.2/EntityDefinitions?$select=LogicalName,EntitySetName,IsValidForCreate,IsValidForUpdate,IsIntersect&$expand=Attributes($select=LogicalName,AttributeType,IsValidForCreate
